@@ -49,8 +49,8 @@ class BatCountry:
 		if deprocess_fn is None:
 			deprocess_fn = BatCountry.deprocess
 
-		# initialize the visualization dictionary
-		visualization = {}
+		# initialize the visualization list
+		visualizations = []
 
 		# prepare base images for all octaves
 		octaves = [preprocess_fn(self.net, image)]
@@ -89,11 +89,12 @@ class BatCountry:
 					print("octave={}, iter={}, layer={}, image_dim={}".format(octave,
 						i, end, vis.shape))
 
-				# check to see if the visualization dictionary should be
+				# check to see if the visualization list should be
 				# updated
 				if visualize:
-					k = "octave={};iter={};layer={}".format(octave, i, end)
-					visualization[k] = vis
+					k = "octave_{}-iter_{}-layer_{}".format(octave, i,
+						end.replace("/", "_"))
+					visualizations.append((k, vis))
 
 			# extract details produced on the current octave
 			detail = src.data[0] - octave_base
@@ -103,7 +104,7 @@ class BatCountry:
 
 		# check to see if the visualizations should be included
 		if visualize:
-			r = (r, visualization)
+			r = (r, visualizations)
 
 		return r
 
