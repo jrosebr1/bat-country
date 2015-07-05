@@ -136,6 +136,10 @@ class BatCountry:
 			bias = net.transformer.mean["data"]
 			src.data[:] = np.clip(src.data, -bias, 255 - bias)
 
+	def layers(self):
+		# return the layers of the network
+		return self.net._layer_names
+
 	def cleanup(self):
 		# remove the patched model from disk
 		os.remove(self.patch_model)
