@@ -14,6 +14,12 @@ After you have Caffe setup and working, `bat-country` is a breeze to install. Ju
 
 <pre>$ pip install bat-country</pre>
 
+You can also install `bat-country` by pulling down the repository and `setup.py`:
+
+<pre>$ git clone https://github.com/jrosebr1/bat-country.git
+$ pip install -r requirements.txt
+$ python setup.py install</pre>
+
 ## A simple example
 As I mentioned, one of the goals of `bat-country` is simplicity. Provided you have already installed Caffe and `bat-country` on your system, it only takes 3 lines of Python code to generate a deep dream/inceptionism image:
 
