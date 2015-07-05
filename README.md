@@ -8,7 +8,7 @@ The `bat-country` package is an **easy to use**, **highly extendible**, **lightw
 If you're looking for a more advanced CNN visualization tool, check out Justin Johnson's [cnn-vis](https://github.com/jcjohnson/cnn-vis) library.
 
 ## Installation
-The bat-country packages requires [Caffe, an open-source CNN implementation from Berkeley](http://caffe.berkeleyvision.org/), to be already installed on your system. I detail the steps required to get Caffe up and running on your system in the [official bat-country release post](http://www.pyimagesearch.com/2015/07/06/bat-country-an-extendible-lightweight-python-package-for-deep-dreaming-with-caffe-and-convolutional-neural-networks/). An excellent alternative is to use the [Docker image](https://github.com/VISIONAI/clouddream) provided by Tomasz of Vision.ai. Using the Docker image will get you up and running quite painlessly.
+The `bat-country` packages requires [Caffe, an open-source CNN implementation from Berkeley](http://caffe.berkeleyvision.org/), to be already installed on your system. I detail the steps required to get Caffe up and running on your system in the [official bat-country release post](http://www.pyimagesearch.com/2015/07/06/bat-country-an-extendible-lightweight-python-package-for-deep-dreaming-with-caffe-and-convolutional-neural-networks/). An excellent alternative is to use the [Docker image](https://github.com/VISIONAI/clouddream) provided by Tomasz of Vision.ai. Using the Docker image will get you up and running quite painlessly.
 
 After you have Caffe setup and working, `bat-country` is a breeze to install. Just use pip:
 
