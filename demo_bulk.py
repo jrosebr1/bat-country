@@ -1,6 +1,6 @@
 # USAGE
 # python demo_bulk.py --base-model $CAFFE_ROOT/models/bvlc_googlenet \
-# 	--image initial_images/the_matrix --output examples/output/the_matrix
+# 	--images initial_images/the_matrix --output examples/output/the_matrix
 
 # import the necessary packages
 from __future__ import print_function
