@@ -1,7 +1,7 @@
 # bat-country
-<img src="initial_images/fear_and_loathing/fal_01.jpg?raw=true" style="max-width: 500px;"/><br/>
-<img src="examples/output/fear_and_loathing/conv2_3x3_fal_01.jpg?raw=true" style="max-width: 500px;"/>
-> We can't stop here, this is bat country.
+<img src="initial_images/fear_and_loathing/fal_01.jpg?raw=true" style="max-width: 300px;"/><br/>
+<img src="examples/output/fear_and_loathing/conv2_3x3_fal_01.jpg?raw=true" style="max-width: 300px;"/>
+> We can't stop here, this is bat country. &mdash; Raoul Duke
 
 The `bat-country` package is an **easy to use**, **highly extendible**, **lightweight Python module** for **inceptionism** and **deep dreaming** with Convolutional Neural Networks and Caffe. My contributions here are honestly pretty minimal. All the real research has been done by the [Google Research Team](http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html) &mdash; I'm simply taking the [IPython Notebook](https://github.com/google/deepdream/blob/master/dream.ipynb), turning it into a Python module, while keeping in mind the importance of extensibility, such as custom step functions.
 
