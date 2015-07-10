@@ -39,6 +39,26 @@ For more information on `bat-country`, along with more code examples, head over 
 
 [http://www.pyimagesearch.com/2015/07/06/bat-country-an-extendible-lightweight-python-package-for-deep-dreaming-with-caffe-and-convolutional-neural-networks/](http://www.pyimagesearch.com/2015/07/06/bat-country-an-extendible-lightweight-python-package-for-deep-dreaming-with-caffe-and-convolutional-neural-networks/)
 
+## Guided dreaming
+Google has also demonstrated that it's possible to *guide* your dreaming process by supplying a *seed image*. This method passes your input image through the network in a similar manner, but this time using your seed image.
+
+Using `bat-country` it's just as easy to perform *guided dreaming* as *deep dreaming*. Here's a quick example:
+
+<pre>bc = BatCountry(args.base_model)
+features = bc.prepare_guide(Image.open(args.guide_image), end=args.layer)
+image = bc.dream(np.float32(Image.open(args.image)), end=args.layer,
+	iter_n=20, objective_fn=BatCountry.guided_objective,
+	objective_features=features,)
+bc.cleanup()</pre>
+
+Where I use an input image of clouds and a seed image of Vincent van Gogh's Starry Night:
+
+IMAGE
+
+As you can see, the output cloud image after applying guided dreaming appears to mimick many of the brush strokes of Van Gogh's painting:
+
+OUTPUT
+
 ## Some visual examples
 Below are a few example images generated using the `bat-country` package:
 
