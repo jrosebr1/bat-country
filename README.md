@@ -59,6 +59,10 @@ As you can see, the output cloud image after applying guided dreaming appears to
 
 <img src="examples/output/seeded/clouds_and_starry_night.jpg?raw=true" style="max-width: 500px;"/>
 
+Here's another example, this time using a seed image of an antelope:
+
+<img src="docs/images/clouds_and_antelope_example.jpg?raw=true" style="max-width: 500px;"/>
+
 ## Some visual examples
 Below are a few example images generated using the `bat-country` package:
 
