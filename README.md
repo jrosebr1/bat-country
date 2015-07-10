@@ -14,7 +14,7 @@ After you have Caffe setup and working, `bat-country` is a breeze to install. Ju
 
 <pre>$ pip install bat-country</pre>
 
-You can also install `bat-country` by pulling down the repository and `setup.py`:
+You can also install `bat-country` by pulling down the repository and using `setup.py`:
 
 <pre>$ git clone https://github.com/jrosebr1/bat-country.git
 $ pip install -r requirements.txt
@@ -35,7 +35,7 @@ result.save("/path/to/output.jpg")</pre>
 
 And that's it!
 
-For more information on `bat-country`, along with more code examples, head over to the the official announcement post on the PyImageSearch blog:
+For more information on `bat-country`, along with additional code examples, head over to the the official announcement post on the PyImageSearch blog:
 
 [http://www.pyimagesearch.com/2015/07/06/bat-country-an-extendible-lightweight-python-package-for-deep-dreaming-with-caffe-and-convolutional-neural-networks/](http://www.pyimagesearch.com/2015/07/06/bat-country-an-extendible-lightweight-python-package-for-deep-dreaming-with-caffe-and-convolutional-neural-networks/)
 
