@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='bat-country',
     packages=['batcountry'],
-    version='0.1.1',
+    version='0.2',
     description='A lightweight, extendible, easy to use Python package for deep dreaming and image generation with Caffe and CNNs',
     author='Adrian Rosebrock',
     author_email='adrian@pyimagesearch.com',
