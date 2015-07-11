@@ -63,6 +63,10 @@ Here's another example, this time using a seed image of an antelope:
 
 <img src="docs/images/clouds_and_antelope_example.jpg?raw=true" style="max-width: 500px;"/>
 
+You can read more about guided dreaming, plus view more example images here:
+
+[http://www.pyimagesearch.com/2015/07/13/generating-art-with-guided-deep-dreaming/](http://www.pyimagesearch.com/2015/07/13/generating-art-with-guided-deep-dreaming/)
+
 ## Some visual examples
 Below are a few example images generated using the `bat-country` package:
 
