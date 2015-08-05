@@ -168,17 +168,8 @@ class BatCountry:
 		# GoogLeNet was trained on images with maximum width and heights
 		# of 224 pixels -- if either dimension is larger than 224 pixels,
 		# then we'll need to do some resizing
-		if h > maxH or w > maxW:
-			# resize based on width
-			if w > h:
-				r = maxW / float(w)
-
-			# resize based on height
-			else:
-				r = maxH / float(h)
-
-			# resize the image
-			(nW, nH) = (int(r * w), int(r * h))
+		nW, nH = 244, 244
+		if w != 244 or h != 244:
 			image = np.float32(image.resize((nW, nH), Image.BILINEAR))
 
 		(src, dst) = (self.net.blobs["data"], self.net.blobs[end])
