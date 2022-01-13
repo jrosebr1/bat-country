@@ -11,7 +11,7 @@ setup(
     download_url='https://github.com/jrosebr1/bat-country/tarball/0.1',
     license='MIT',
     install_requires=[
-        'Pillow==2.9.0',
+        'Pillow==9.0.0',
         'argparse==1.2.1',
         'decorator==3.4.2',
         'imutils==0.2.2',
