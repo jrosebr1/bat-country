@@ -19,7 +19,7 @@ setup(
         'mock==1.0.1',
         'networkx==1.9.1',
         'nose==1.3.7',
-        'numpy==1.9.2',
+        'numpy==1.21.0',
         'protobuf==2.6.1',
         'pyparsing==2.0.3',
         'python-dateutil==2.4.2',
